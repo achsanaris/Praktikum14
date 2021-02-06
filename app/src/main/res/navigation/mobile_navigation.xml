@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="project.achsan.quotesapps.ui.class_quotes.ClassQuotesFragment"
+        android:label="Class Quotes"
+        tools:layout="@layout/fragment_class_quotes" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="project.achsan.quotesapps.ui.my_quotes.MyQuotesFragment"
+        android:label="My Quotes"
+        tools:layout="@layout/fragment_my_quotes" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="project.achsan.quotesapps.ui.global_quotes.GlobalQuotesFragment"
+        android:label="Global Quotes"
+        tools:layout="@layout/fragment_global_quotes" />
+</navigation>
